@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="prot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+   <style>
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .card ul {
+      padding-left: 20px;
+    }
+    .highlight-icon {
+      color: #007bff;
+      margin-right: 10px;
+    }
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body> 
+  <!-- Header Section -->
+  <header class="header">
+    <a class="logo" href="#">Anter</a>
+    <button class="menu-button" id="menuToggle">☰</button>
+    <div class="nav" id="navbarSupportedContent">
+      <ul class="navbar" id="navMenu">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="Hager-Tarek-Saad-Anter-FlowCV-Resume-20240229 (1).pdf" download="Hager-Tarek-Saad-Anter-FlowCV-Resume-20240229 (1).pdf">Download CV</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">  
+    <div class="text-container">
+      Hi There, <br>I'm <span class="highlight"><b>Hager Anter</b></span>
+      <div class="des"><p>Software Engineer, and Web Developer</p></div> 
+    </div>
+
+    <div id="social-media">
+      <a href="https://www.linkedin.com/in/hagertarek-anter-2861051a9/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/hageranter"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/hager.tarekanter.1"><i class="fab fa-facebook"></i></a>
+    </div>  
+  </div>
+
+  
+
+  <div class="container mt-5">
+    <!-- Section Heading -->
+    <h2 class="section-heading text-center">About Me & Studies</h2>
+
+    <!-- About Me and Studies Section -->
+    <div class="row">
+      <!-- About Me Section -->
+      <div class="col-md-6">
+        <div class="card">
+          <h3><i class="fas fa-user highlight-icon"></i>About Me</h3>
+          <p>I am an undergraduate Software Engineer with a focus on the Software Industry and Multimedia.
+            And also I am a USAID Scholers at the AUC.
+            Below are some of the core skills and competencies I have developed:</p>
+          <ul>
+            <li><b>Full Stack  Development:</b>
+              <ul>
+                <li>Strong understanding of HTML and CSS</li>
+                <li>JavaScript, and PHP with Laravel</li>
+              </ul>
+            </li>
+            <li><b> Ending the PHP course from ITI</b> </li>
+            <li>Good in Java</li>
+            <li>Good at Python</li>
+            <li>Strong knowledge of Database systems</li>
+            <li>Strong understanding of Data Structures</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Studies Filed Section -->
+      <div class="col-md-6">
+        <div class="card">
+          <h3><i class="fas fa-graduation-cap highlight-icon"></i>Studies Filed</h3>
+          <ul>
+            <li>OOP with JAVA programming language</li>
+            <li>Advanced Web Development Techniques with HTML5, HTML, JavaScript, PHP, and CSS3</li>
+            <li>Data Structures</li>
+            <li>Game Programming</li>
+            <li>Python for Data Science</li>
+            <li>Database Management Essentials</li>
+            <li>Discrete maths and Calclus</li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="projects.html" class="btn btn-primary btn-projects">View My Projects</a>
+  </div>
+  <!-- Footer Section -->
+  <footer class="mt-5 text-center">
+    <p>&copy; <span id="2024"></span> Hager Anter. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+  <script src="mine.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
